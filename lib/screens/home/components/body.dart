@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-
+import 'feature_plants.dart';
 import 'home_header.dart';
+import 'recomend_places.dart';
+import 'title_with_more_btn.dart';
 
 class Body extends StatelessWidget {
   const Body({super.key});
@@ -12,6 +14,16 @@ class Body extends StatelessWidget {
       child: Column(
         children: [
           HomePageHeader(size: size),
+          TitleWithMoreBtn(
+            title: 'Recomended',
+            press: () {},
+          ),
+          const RecomentPlants(),
+          TitleWithMoreBtn(
+            title: 'Featured Plants',
+            press: () {},
+          ),
+          const FeaturePlants(),
         ],
       ),
     );

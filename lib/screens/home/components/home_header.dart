@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -15,8 +13,9 @@ class HomePageHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
       height: size.height * 0.2,
+      margin: const EdgeInsets.only(bottom: kDefaultPadding * 2.5),
       child: Stack(
         children: [
           Container(
@@ -41,11 +40,10 @@ class HomePageHeader extends StatelessWidget {
               children: [
                 Text(
                   'Hi Uishopy!',
-                  style:
-                      Theme.of(context).textTheme.headlineSmall!.copyWith(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          ),
+                  style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
                 ),
                 const Spacer(),
                 Image.asset(
