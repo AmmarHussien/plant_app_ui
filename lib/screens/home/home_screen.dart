@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../../components/custom_nav_bar.dart';
 import 'components/body.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -11,6 +12,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: buildAppBar(context),
       body: const Body(),
+      bottomNavigationBar: const CustomNavBar(),
     );
   }
 
