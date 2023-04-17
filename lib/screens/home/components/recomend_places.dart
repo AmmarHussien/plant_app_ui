@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+import 'package:plant_app_ui/screens/details/details_screen.dart';
 
 import '../../../constant.dart';
 import 'recomend_place_card.dart';
@@ -20,21 +20,39 @@ class RecomentPlants extends StatelessWidget {
             title: 'Samantha',
             country: 'Russia',
             price: 440,
-            press: () {},
+            press: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const DetailsScreen(),
+                ),
+              );
+            },
           ),
           RecomendPlantCard(
             image: 'assets/images/image_2.png',
             title: 'Samantha',
             country: 'Russia',
             price: 440,
-            press: () {},
+            press: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const DetailsScreen(),
+                ),
+              );
+            },
           ),
           RecomendPlantCard(
             image: 'assets/images/image_3.png',
             title: 'Samantha',
             country: 'Russia',
             price: 440,
-            press: () {},
+            press: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const DetailsScreen(),
+                ),
+              );
+            },
           ),
           const SizedBox(
             width: kDefaultPadding,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
+import '../../components/coustom_app_bar.dart';
 import '../../components/custom_nav_bar.dart';
 import 'components/body.dart';
 
@@ -13,17 +13,6 @@ class HomeScreen extends StatelessWidget {
       appBar: buildAppBar(context),
       body: const Body(),
       bottomNavigationBar: const CustomNavBar(),
-    );
-  }
-
-  AppBar buildAppBar(BuildContext context) {
-    return AppBar(
-      backgroundColor: Theme.of(context).primaryColor,
-      elevation: 0,
-      leading: IconButton(
-        onPressed: () {},
-        icon: SvgPicture.asset('assets/icons/menu.svg'),
-      ),
     );
   }
 }
